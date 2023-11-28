@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" href="../resources/favicon.io.png">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../resources/favicon.io.svg" alt="logo" width="50px" height="auto">
+                <h2>Buy4market</h2>
+            </div>
+                <h1>Customers Report Form</h1>       
+        </header>
+
+        <form action="../resources">
+            <fieldset>
+                <legend>I am reporting a:</legend>
+                <input type="checkbox" id="observation" >
+                <label for="observation">Observation</label>
+                <input type="checkbox" id="Loss of time/injury" >
+                <label for="Loss of time/injury">Loss of time/injury</label>
+                <input type="checkbox" id="Work accident" >
+                <label for="Work accident">Work accident</label><br>
+                <input type="checkbox" id="Work vehicle accident" >
+                <label for="Work vehicle accident">Work vehicle accident</label>
+                <input type="checkbox" id="First aid incident" >
+                <label for="First aid incident">First aid incident</label>
+                <input type="checkbox" id="Close Call" >
+                <label for="Close Call">Close Call</label>
+            </fieldset>
+            <div class="reporting-involved">
+                <label for="person reporting"> Person reporting incident</label><br>
+                <div class="person-reporting">
+                    <input type="text" name="fname" id="person-reporting" placeholder="First Name">
+                    <input type="text" name="lname" id="person-reporting" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="reporting-involved">
+                <label for="Person involved in accident"> Person involved in incident</label><br>
+                <div class="person-reporting">
+                    <input type="text" name="fname" id="Person-involved-in-accident" placeholder="First Name">
+                    <input type="text" name="lname" id="Person-involved-in-accident" placeholder="Last Name"> 
+                </div>
+            </div>
+            <div>
+                <label for="Incident date"> Incident Date and time</label><br>
+                <div class="date">
+                    <input type="number" name="month" max="12" min="1" placeholder="3" >
+                    <input type="number" name="Day"  max="31" min="1" placeholder="22"> 
+                    <input type="number" name="year" max="2022" min="1952" placeholder="1995">
+                    <i style="font-size:24px" class="fa">&#xf073;</i>
+                </div>
+            </div>
+            <div class="time">
+                <input type="number" name="hour" max="12" min="1" placeholder="4">
+                <input type="number" name="minutes" max="59" min="0" placeholder="30">
+                <select name="pm/am" id="AM">
+                    <option value="" ></option>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                
+                <i style="font-size:24px" class="fa">&#xf017;</i>
+            </div>
+
+            <label for="description"> Please describe the accident</label><br>
+            <textarea name="desc" id="description" cols="0" rows="0"></textarea>
+            <div class="submit">
+                <input type="button" value="Submit">
+                <input type="button" formaction="../IT Traning/Projects/first project/" value="Submit As Admin">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
